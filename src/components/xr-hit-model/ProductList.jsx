@@ -26,7 +26,6 @@ const ProductList = () => {
       <div>
         {products.map((product) => (
           <div key={product.id}>
-            <h2>{product.name}</h2>
             <Link to={`/xr?gltfPath=${product.gltfPath}`}>
               <button>View in AR</button>
             </Link>
