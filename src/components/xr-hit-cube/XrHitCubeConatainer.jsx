@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber"
-import XeHitCube from "./XeHitCube"
+import XeHitCube from "./XrHitCube"
 import { ARButton, XR } from "@react-three/xr"
 
 
