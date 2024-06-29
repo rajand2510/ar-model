@@ -177,8 +177,11 @@ const ProductList = () => {
   };
 
   return (
-    <div>
-      <div className="flex flex-col mt-[40px] md:flex-row justify-between items-center mb-5 px-5 space-y-4 md:space-y-0 md:space-x-4">
+    <div className="mt-10">
+      <div className="flex justify-center">
+        <p className="text-[40px] font-bold text-green-950">Our Products</p>
+      </div>
+      <div className="flex flex-col mt-[20px] md:flex-row justify-between items-center mb-5 px-5 space-y-4 md:space-y-0 md:space-x-4">
         <input
           type="text"
           placeholder="Search products..."
