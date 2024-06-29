@@ -7,9 +7,10 @@ const NavItem = ({ children }) => (
 );
 
 const Button = ({ children, className }) => (
-  <button className={`justify-center px-6 py-[3px] rounded-2xl border border-solid backdrop-blur-[13.5px] bg-white bg-opacity-40 border-white border-opacity-70 max-md:px-5 ${className}`}>
-    {children}
-  </button>
+<button class="flex justify-center items-center px-6 py-1 rounded-2xl bg-white bg-opacity-40 border border-white border-opacity-70 hover:bg-white hover:text-green-800 cursor-pointer  max-md:px-5">
+  {children}
+</button>
+
 );
 
 const Navbar = () => {
@@ -30,9 +31,9 @@ const Navbar = () => {
       <div className="flex gap-5 justify-between w-full max-w-[1473px] max-md:flex-wrap max-md:max-w-full">
        <img
   loading="lazy"
-  src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e800b5428dbb95e38bbe22bf88730878a81bed744fdff047b9ad821fb1d51bb?apiKey=980db322e33a4a39a5052caa449e1da6&"
+  src="/image/logo.png"
   alt=""
-  className={`shrink-0 max-w-full aspect-[2.78] w-[200px] max-md:w-[150px] ${isMenuOpen? 'hidden' : ''}`}
+  className={`shrink-0 max-w-full aspect-[2.5] w-[200px] max-md:w-[150px] ${isMenuOpen? 'hidden' : ''}`}
 />
         <nav className="flex gap-5 justify-between my-auto max-md:flex-wrap max-md:max-w-full">
           <div className="flex gap-8 justify-between my-auto">
