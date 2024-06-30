@@ -12,14 +12,14 @@ const Hero = () => {
       ) : (
         <Spline scene="https://prod.spline.design/Lq8gdfcvLF7j66MD/scene.splinecode" />
       )}
-        <figure>
+        <section>
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/e9dab041f6b0ac4b8d62e7b24c40723c88dc6d6b64ce4ed64155dd324bc0a9bd?apiKey=980db322e33a4a39a5052caa449e1da6&"
-          className="w-full  border-4 border-white border-solid aspect-[3.57] fill-[url(<path-to-image>)_lightgray_-2.592px_-130.776px_/_100.556%_130.843%_no-repeat] stroke-[4px] stroke-white"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/4e71b7e47c041381fdaa0a641f937a10d2dbe23db52c2bcdd69075ded8885ea3?apiKey=980db322e33a4a39a5052caa449e1da6&"
           alt="Decorative image"
+          className="w-full border-4 border-white border-solid aspect-[2.86] fill-[url(<path-to-image>)_lightgray_-2.592px_-164.395px_/_100.556%_130.843%_no-repeat] stroke-[4px] stroke-white"
         />
-      </figure>
+      </section>
     </>
   );
 }

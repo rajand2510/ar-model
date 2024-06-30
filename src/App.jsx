@@ -6,12 +6,15 @@ import XrHitModelConatainer from './components/xr-hit-model/XrHitModelConatainer
 //import ProductList from './components/xr-hit-model/ProductList';
 import Products from './components/product/Products';
 import Home from './components/homecontainer/Home';
-
+import Login from './components/Userauthcontainer/Login';
+import Signup from './components/Userauthcontainer/Signup';
 
 function App() {
   return (
 <Routes>
 <Route path="/" element={<Home />} />
+<Route path="/login" element={<Login/>} />
+<Route path="/signup" element={<Signup/>} />
 <Route path="/products" element={<Products />} />
 <Route path="/cube" element={<CubeConatainer />}/>
 <Route path="/xr-cube" element={<XrCubeConatainer />}/>
