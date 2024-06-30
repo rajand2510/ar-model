@@ -32,57 +32,59 @@ const ProductCard = ({ gltfPath, title, price, positionY, initialScale }) => {
 
   return (
     <div className="flex flex-col px-5 pt-5 pb-5 mx-[15px] my-[20px] bg-white shadow-2xl max-w-[380px] max-h-[480px] rounded-[25px]">
-      <div className="shrink-0 rounded-[20px] bg-zinc-300 h-[282px]">
-        <Canvas
-          className="product-canvas rounded-[15px]"
-          camera={{ position: [0, 0, 5] }}
-          gl={{ alpha: true }}
-          style={{ background: 'linear-gradient(to bottom, #cfd9df, #e2ebf0)' }}
-        >
-          {/* Lighting */}
-          <ambientLight intensity={0.5} color="#ffffff" />
-          <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-
-          {/* Controls */}
-          <OrbitControls ref={controlsRef} />
-
-          {/* Model */}
-          {model && <primitive object={model} />}
-        </Canvas>
+    <div className="shrink-0 rounded-[20px] bg-zinc-300 h-[282px]">
+      <Canvas
+        className="product-canvas rounded-[15px]"
+        camera={{ position: [0, 0, 5] }}
+        gl={{ alpha: true }}
+        style={{ background: 'linear-gradient(to bottom, #cfd9df, #e2ebf0)' }}
+      >
+        {/* Lighting */}
+        <ambientLight intensity={0.5} color="#ffffff" />
+        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+  
+        {/* Controls */}
+        <OrbitControls ref={controlsRef} />
+  
+        {/* Model */}
+        {model && <primitive object={model} />}
+      </Canvas>
+    </div>
+  
+    <div className="flex gap-0.5 items-start mt-10">
+      <div className="flex flex-col grow self-start w-fit">
+        <h2 className="text-base text-black">{title}</h2>
+        <div className="flex gap-8 mt-7 font-bold">
+          <p className="my-auto text-xl text-black">Rs.{price}</p>
+          <button
+            className="flex gap-1.0 px-2.5 py-1.5 text-sm text-white rounded-xl bg-neutral-700 hover:bg-neutral-800"
+            style={{ minWidth: '100px' }} // Adjust the minimum width as needed
+          >
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/20da946bd58526d190052f874a3f98dcc8106b31f9cfef97cd2fdf5721a63f2b?apiKey=980db322e33a4a39a5052caa449e1da6&"
+              alt=""
+              className="shrink-0 aspect-[0.79] w-[15px]"
+            />
+            <span className="flex-auto my-auto">ADD TO CART</span>
+          </button>
+        </div>
       </div>
-
-      <div className="flex gap-0.5 items-start mt-10">
-        <div className="flex flex-col grow shrink- self-start basis-0 w-fit">
-          <h2 className="text-base text-black">{title}</h2>
-          <div className="flex gap-8 mt-7 font-bold">
-            <p className="my-auto text-2xl text-black">Rs.{price}</p>
-            <button
-              className="flex gap-1.0 px-2.5 py-1.5 text-sm text-white rounded-xl bg-neutral-700 hover:bg-neutral-800"
-            >
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/20da946bd58526d190052f874a3f98dcc8106b31f9cfef97cd2fdf5721a63f2b?apiKey=980db322e33a4a39a5052caa449e1da6&"
-                alt=""
-                className="shrink-0 aspect-[0.79] w-[15px]"
-              />
-              <span className="flex-auto my-auto">ADD TO CART</span>
-            </button>
-          </div>
-        </div>
-        <div className="self-end mt-11">
+      <div className="self-end mt-11">
         <Link to={`/xr?gltfPath=${gltfPath}`}>
-            <button className="flex justify-center items-center px-0.5 rounded-full bg-zinc-300 h-[35px] w-[35px]">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3953c11395d39a267a119923443e4f991c370c2e178305152ef11e99f79d659?apiKey=980db322e33a4a39a5052caa449e1da6&"
-                alt="AR View"
-                className="aspect-square w-[31px]"
-              />
-            </button>
-          </Link>
-        </div>
+          <button className="flex justify-center items-center px-0.5 rounded-full bg-zinc-300 h-[35px] w-[35px]">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3953c11395d39a267a119923443e4f991c370c2e178305152ef11e99f79d659?apiKey=980db322e33a4a39a5052caa449e1da6&"
+              alt="AR View"
+              className="aspect-square w-[31px]"
+            />
+          </button>
+        </Link>
       </div>
     </div>
+  </div>
+  
   );
 };
 
@@ -148,7 +150,7 @@ const ProductList = () => {
     {
       id: 8,
       title: "Smartphone",
-      price: "799.99",
+      price: "79999",
       gltfPath: "/models/indoor_plant/scene.gltf",
       initialScale: 4,
       positionY: -2.5,

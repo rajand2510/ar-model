@@ -16,14 +16,14 @@ const ProductImage = ({ src, alt }) => {
 
 const AddToCartButton = () => {
   return (
-    <button className="flex gap-1 px-4 w-6/12  py-1.5 mt-7 text-base font-bold text-justify text-white bg-black rounded-3xl">
+    <button className="flex gap-1 px-5 w-2/12  py-1.5 mt-7 text-base font-bold text-justify text-white bg-black rounded-3xl">
       <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/5e55fa33744fd7794ef2a1b0f03402a432c0dd4869c54a3a6f18449249ad8afe?apiKey=980db322e33a4a39a5052caa449e1da6&"
         alt=""
         className="shrink-0 w-6 aspect-square"
       />
-      <span className="flex-auto my-auto">ADD TO CART</span>
+    
     </button>
   );
 };

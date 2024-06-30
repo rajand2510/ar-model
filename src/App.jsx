@@ -8,11 +8,12 @@ import XrHitModelConatainer from './components/xr-hit-model/XrHitModelConatainer
 import Home from './components/homecontainer/Home';
 import Login from './components/Userauthcontainer/Login';
 import Signup from './components/Userauthcontainer/Signup';
-
+import MainProduct from './components/product/MainProduct';
 function App() {
   return (
 <Routes>
 <Route path="/" element={<Home />} />
+<Route path="/products" element={<MainProduct />} />
 <Route path="/login" element={<Login/>} />
 <Route path="/signup" element={<Signup/>} />
 
