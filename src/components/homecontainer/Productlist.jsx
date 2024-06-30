@@ -93,7 +93,7 @@ const ProductList = () => {
   const productData = [
     {
       id: 1,
-      title: "Indoor Plant",
+      title: "Bharat Sales Vinyl Adjustable Height Control Chair",
       price: "29.99",
       gltfPath: "/models/indoor_plant/scene.gltf",
       initialScale: 4,
