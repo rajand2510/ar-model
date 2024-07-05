@@ -1,5 +1,5 @@
 import * as React from "react";
-import Navbar from "./Loginnav";
+import Navbar from "../homecontainer/Navbar";
 
 import { useState } from 'react';
 

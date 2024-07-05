@@ -1,5 +1,5 @@
 import React from 'react'
-import UserAuthNavbar from './Loginnav'
+import Navbar from '../homecontainer/Navbar';
 import Footer from '../homecontainer/Footer'
 import  { useState } from "react" 
 
@@ -90,7 +90,7 @@ function LogInForm() {
 const Login = () => {
   return (
     <>
-      <UserAuthNavbar />
+      <Navbar />
       <main className="flex justify-center mt-[70px] px-4 mb-12">
         <section className="bg-white rounded-3xl shadow-xl w-full max-w-3xl mt-10 p-4">
           <div className="flex gap-5 flex-col md:flex-row items-stretch">
